@@ -13,12 +13,19 @@ public class Player : MonoBehaviour
     private int _lives = 3;
     private float _cooldownTimer = -1;
     private float fireRate = 0.25f;
+    private EnemySpawner _spawnManager;
    
 
     // Start is called before the first frame update
     void Start()
     {
         transform.position = startPos;
+        _spawnManager = GameObject.Find("SpawnManager").GetComponent<EnemySpawner>();
+
+        if (_spawnManager == null)
+        {
+            Debug.LogError("SpawnManager does not exist");
+        }
     }
 
     // Update is called once per frame
@@ -49,13 +56,14 @@ public class Player : MonoBehaviour
         }
 
         // Boundaries for y position 
-        transform.position = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y, -4, 6), 0);
+        transform.position = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y, -3.6f, 5.7f), 0);
     }
 
     void FireLaser()
     {
         _cooldownTimer = Time.time + fireRate;
-        Instantiate(_laser, transform.position + new Vector3(0, 0.8f, 0), Quaternion.identity);
+        GameObject newLaser = Instantiate(_laser, transform.position + new Vector3(0, 1f, 0), Quaternion.identity);
+        //newLaser.transform.parent = this.gameObject.transform;
     }
 
     public void Damage()
@@ -64,6 +72,7 @@ public class Player : MonoBehaviour
         Debug.Log("HIT!");
         if (_lives < 1)
         {
+            _spawnManager.OnPlayerDeath();
             Destroy(this.gameObject);
         }
     }
