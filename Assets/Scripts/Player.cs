@@ -4,17 +4,22 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    private EnemySpawner _spawnManager;
     private Vector3 startPos = new Vector3(0, 0, 0);
-    [SerializeField]
-    private float _speed = 2.0f;
+    private bool tripleShotEnabled = false;
+    /* PRFEFABS */
     [SerializeField]
     private GameObject _laser;
+    [SerializeField]
+    private GameObject _triple_shot;
+    /* Editable variables */
+    [SerializeField]
+    private float _speed = 2.0f;
     [SerializeField]
     private int _lives = 3;
     private float _cooldownTimer = -1;
     private float fireRate = 0.25f;
-    private EnemySpawner _spawnManager;
-   
+
 
     // Start is called before the first frame update
     void Start()
@@ -34,7 +39,13 @@ public class Player : MonoBehaviour
         CalculateMovement();
         if (Input.GetKeyDown(KeyCode.Space) && Time.time > _cooldownTimer)
         {
-            FireLaser();
+            if (tripleShotEnabled)
+            {
+                FireTripleShot();
+            } else
+            {
+                FireLaser();
+            }
         }
     }
 
@@ -63,7 +74,11 @@ public class Player : MonoBehaviour
     {
         _cooldownTimer = Time.time + fireRate;
         GameObject newLaser = Instantiate(_laser, transform.position + new Vector3(0, 1f, 0), Quaternion.identity);
-        //newLaser.transform.parent = this.gameObject.transform;
+    }
+
+    void FireTripleShot()
+    {
+        Instantiate(_triple_shot, transform.position, Quaternion.identity);
     }
 
     public void Damage()
@@ -76,4 +91,24 @@ public class Player : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
+
+    public void EnableTripleShot()
+    {
+        float timer = 5f;
+        tripleShotEnabled = true;
+        while (timer > 0)
+        {
+            Debug.Log("timer");
+            timer -= Time.deltaTime;
+        }
+        //tripleShotEnabled = false;
+    }
+
+    /* 
+    IEnumerator TripleShotCooldown()
+    {
+        yield return new WaitForSeconds(5f);
+        tripleShotEnabled = false;
+    }
+    */
 }
