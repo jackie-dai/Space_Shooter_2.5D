@@ -15,7 +15,7 @@ C:/Users/malik/Desktop/Personal Projects/Games/Space_Shooter_2.5D
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-55065
+60864
 Successfully changed project path to: C:/Users/malik/Desktop/Personal Projects/Games/Space_Shooter_2.5D
 C:/Users/malik/Desktop/Personal Projects/Games/Space_Shooter_2.5D
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,7 +47,7 @@ C:/Users/malik/Desktop/Personal Projects/Games/Space_Shooter_2.5D
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 102.49 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 91.93 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.11f1 (0a5ca18544bf)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/Resources/UnitySubsystems
@@ -63,89 +63,89 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56968
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56332
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.015053 seconds.
+Registered in 0.010330 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 91.66 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 93.82 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.859 seconds
+- Completed reload, in  0.758 seconds
 Domain Reload Profiling:
-	ReloadAssembly (860ms)
-		BeginReloadAssembly (121ms)
+	ReloadAssembly (758ms)
+		BeginReloadAssembly (89ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (563ms)
-			LoadAssemblies (116ms)
+		EndReloadAssembly (530ms)
+			LoadAssemblies (85ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (132ms)
+			SetupTypeCache (118ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (31ms)
-			SetupLoadedEditorAssemblies (334ms)
+			SetupLoadedEditorAssemblies (318ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (10ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (92ms)
+				RefreshPlugins (94ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (176ms)
-				ProcessInitializeOnLoadMethodAttributes (55ms)
+				ProcessInitializeOnLoadAttributes (159ms)
+				ProcessInitializeOnLoadMethodAttributes (54ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.009346 seconds.
+Registered in 0.008790 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\malik\Desktop\Personal Projects\Games\Space_Shooter_2.5D\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\malik\Desktop\Personal Projects\Games\Space_Shooter_2.5D\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.14 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.66 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.533 seconds
+- Completed reload, in  1.197 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1534ms)
-		BeginReloadAssembly (164ms)
+	ReloadAssembly (1198ms)
+		BeginReloadAssembly (131ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
+			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (25ms)
-		EndReloadAssembly (1200ms)
-			LoadAssemblies (117ms)
+			CreateAndSetChildDomain (19ms)
+		EndReloadAssembly (924ms)
+			LoadAssemblies (106ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (351ms)
+			SetupTypeCache (288ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (86ms)
-			SetupLoadedEditorAssemblies (590ms)
+			RebuildScriptCaches (61ms)
+			SetupLoadedEditorAssemblies (428ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
+				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (120ms)
-				ProcessInitializeOnLoadAttributes (387ms)
-				ProcessInitializeOnLoadMethodAttributes (52ms)
-				AfterProcessingInitializeOnLoad (20ms)
+				BeforeProcessingInitializeOnLoad (105ms)
+				ProcessInitializeOnLoadAttributes (268ms)
+				ProcessInitializeOnLoadMethodAttributes (33ms)
+				AfterProcessingInitializeOnLoad (13ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (11ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.61 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.60 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3386 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 27 unused Assets / (113.9 KB). Loaded Objects now: 3843.
+Unloading 3387 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (113.9 KB). Loaded Objects now: 3844.
 Memory consumption went from 119.2 MB to 119.1 MB.
-Total: 4.285200 ms (FindLiveObjects: 0.360100 ms CreateObjectMapping: 0.093600 ms MarkObjects: 3.667400 ms  DeleteObjects: 0.162600 ms)
+Total: 3.363000 ms (FindLiveObjects: 0.294000 ms CreateObjectMapping: 0.080000 ms MarkObjects: 2.873300 ms  DeleteObjects: 0.114900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -159,58 +159,46 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 418052.200433 seconds.
-  path: Assets/2D-Galaxy-Assets/Sprites/Power_Ups/Triple_Shot/Powerup3_0008_00004.png
-  artifactKey: Guid(08721a7e8122ae54cb60f5e90df70269) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D-Galaxy-Assets/Sprites/Power_Ups/Triple_Shot/Powerup3_0008_00004.png using Guid(08721a7e8122ae54cb60f5e90df70269) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e94512232bb6ca681417bd1e0b93d684') in 0.237973 seconds 
+  Time since last request: 580920.543756 seconds.
+  path: Assets/2D-Galaxy-Assets/Sprites/Power_Ups/Shield/Powerup2_0008_00001.png
+  artifactKey: Guid(d4c04a6e02a3c4a41b8a8c547a881c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D-Galaxy-Assets/Sprites/Power_Ups/Shield/Powerup2_0008_00001.png using Guid(d4c04a6e02a3c4a41b8a8c547a881c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c19ddd802a6ab43d2b52336f28f3685a') in 0.201908 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000028 seconds.
-  path: Assets/2D-Galaxy-Assets/Sprites/Power_Ups/Triple_Shot/Powerup3_0008_00013.png
-  artifactKey: Guid(201c6bec23c7da9448c3e8bf7a26e89f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D-Galaxy-Assets/Sprites/Power_Ups/Triple_Shot/Powerup3_0008_00013.png using Guid(201c6bec23c7da9448c3e8bf7a26e89f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8358f80e044b4db1451d0141522b480d') in 0.046715 seconds 
+  path: Assets/2D-Galaxy-Assets/Sprites/Power_Ups/Shield/Powerup2_0008_00005.png
+  artifactKey: Guid(6dc2f614c9a8e427792e533426dbe25d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D-Galaxy-Assets/Sprites/Power_Ups/Shield/Powerup2_0008_00005.png using Guid(6dc2f614c9a8e427792e533426dbe25d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '355c788b9eae6b6545b57253e5ae0d74') in 0.045317 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/2D-Galaxy-Assets/Sprites/Power_Ups/Triple_Shot/Powerup3_0008_00003.png
-  artifactKey: Guid(3f1c2590613aad2458e88e95f67764a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D-Galaxy-Assets/Sprites/Power_Ups/Triple_Shot/Powerup3_0008_00003.png using Guid(3f1c2590613aad2458e88e95f67764a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '269203c68aa2d827cfd0aa1234c77f79') in 0.046914 seconds 
+  Time since last request: 0.000024 seconds.
+  path: Assets/2D-Galaxy-Assets/Sprites/Power_Ups/Shield/Powerup2_0008_00008.png
+  artifactKey: Guid(938dd37514bec45d39613a42a06a1cb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D-Galaxy-Assets/Sprites/Power_Ups/Shield/Powerup2_0008_00008.png using Guid(938dd37514bec45d39613a42a06a1cb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ca3c3d08c18561f5484d3059720d65d') in 0.039142 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/2D-Galaxy-Assets/Sprites/Power_Ups/Triple_Shot/Powerup3_0008_00008.png
-  artifactKey: Guid(d371d99a043ff16448c9dc33862f94f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D-Galaxy-Assets/Sprites/Power_Ups/Triple_Shot/Powerup3_0008_00008.png using Guid(d371d99a043ff16448c9dc33862f94f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93f70234835567c50de0269502119d5c') in 0.053498 seconds 
+  Time since last request: 0.000021 seconds.
+  path: Assets/2D-Galaxy-Assets/Sprites/Power_Ups/Shield/Powerup2_0008_00010.png
+  artifactKey: Guid(962f1aafaa24df44ca9130cedfa4bd67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D-Galaxy-Assets/Sprites/Power_Ups/Shield/Powerup2_0008_00010.png using Guid(962f1aafaa24df44ca9130cedfa4bd67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7546def35ffacacb4bc66052f88f66c0') in 0.041409 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/2D-Galaxy-Assets/Sprites/Power_Ups/Triple_Shot/Powerup3_0008_00014.png
-  artifactKey: Guid(fadf90cfbc0b3524ab83eda8a359c35a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D-Galaxy-Assets/Sprites/Power_Ups/Triple_Shot/Powerup3_0008_00014.png using Guid(fadf90cfbc0b3524ab83eda8a359c35a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '861550f99be711e170b65a2c508d52a4') in 0.043823 seconds 
+  Time since last request: 0.000020 seconds.
+  path: Assets/2D-Galaxy-Assets/Sprites/Power_Ups/Shield/Powerup2_0008_00012.png
+  artifactKey: Guid(7c9c992a438891a40be8ace1b6808e50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D-Galaxy-Assets/Sprites/Power_Ups/Shield/Powerup2_0008_00012.png using Guid(7c9c992a438891a40be8ace1b6808e50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '302a1cf7350b82fcaa682020cf8ee988') in 0.048753 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/2D-Galaxy-Assets/Sprites/Power_Ups/Triple_Shot/Powerup3_0008_00012.png
-  artifactKey: Guid(bb5ba4f63cfbfdb4eb8a9bc18fd5c46e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D-Galaxy-Assets/Sprites/Power_Ups/Triple_Shot/Powerup3_0008_00012.png using Guid(bb5ba4f63cfbfdb4eb8a9bc18fd5c46e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7800e677e16eb019aa4693f7a5f9a46d') in 0.048462 seconds 
+  Time since last request: 0.000021 seconds.
+  path: Assets/2D-Galaxy-Assets/Sprites/Power_Ups/Shield/Powerup2_0008_00004.png
+  artifactKey: Guid(5979a5b3d6b2d43ccac8e172b49a0af6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D-Galaxy-Assets/Sprites/Power_Ups/Shield/Powerup2_0008_00004.png using Guid(5979a5b3d6b2d43ccac8e172b49a0af6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db703fee2d0a981bdd7127c7d153ee26') in 0.038123 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/2D-Galaxy-Assets/Sprites/Power_Ups/Triple_Shot/Powerup3_0008_00011.png
-  artifactKey: Guid(b2cdea34ebf3d9a4ebc57de48bbd1a14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D-Galaxy-Assets/Sprites/Power_Ups/Triple_Shot/Powerup3_0008_00011.png using Guid(b2cdea34ebf3d9a4ebc57de48bbd1a14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '423e9d1f1e5db6f1b60a5dae7f0a5e1d') in 0.046282 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
-  path: Assets/2D-Galaxy-Assets/Sprites/Power_Ups
-  artifactKey: Guid(15e082f9a66c7c742ab23a9428cc55c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D-Galaxy-Assets/Sprites/Power_Ups using Guid(15e082f9a66c7c742ab23a9428cc55c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae08cb33edb0c7c24c53c1cc167bfe13') in 0.010381 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/2D-Galaxy-Assets/Sprites/Power_Ups/Triple_Shot
-  artifactKey: Guid(48743e3ff55e2984ea19fb29894f4d3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/2D-Galaxy-Assets/Sprites/Power_Ups/Triple_Shot using Guid(48743e3ff55e2984ea19fb29894f4d3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09f2662b0adafd74e41da1b879e93b88') in 0.009726 seconds 
+  Time since last request: 0.465269 seconds.
+  path: Assets/2D-Galaxy-Assets/Sprites/Power_Ups/Shield/Powerup2_0008_00014.png
+  artifactKey: Guid(12919bebd08f5e947a361e8a1a93ba39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2D-Galaxy-Assets/Sprites/Power_Ups/Shield/Powerup2_0008_00014.png using Guid(12919bebd08f5e947a361e8a1a93ba39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a31193ab00300a5d0b83ea38d567c66e') in 0.035700 seconds 
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 AssetImportWorker is now disconnected from the server
 Process exiting

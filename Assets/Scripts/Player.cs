@@ -4,14 +4,17 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    private EnemySpawner _spawnManager;
+    private SpawnManager _spawnManager;
     private Vector3 startPos = new Vector3(0, 0, 0);
     private bool tripleShotEnabled = false;
+    private bool shieldEnabled = false;
     /* PRFEFABS */
     [SerializeField]
     private GameObject _laser;
     [SerializeField]
     private GameObject _triple_shot;
+    [SerializeField]
+    private GameObject _shieldPrefab;
     /* Editable variables */
     [SerializeField]
     private float _speed = 2.0f;
@@ -19,13 +22,16 @@ public class Player : MonoBehaviour
     private int _lives = 3;
     private float _cooldownTimer = -1;
     private float fireRate = 0.25f;
+    private float tripleShotDuration = 5f;
+    private int speedMultiplier = 1;
+    private float speedBoostDuration = 5f; 
 
 
     // Start is called before the first frame update
     void Start()
     {
         transform.position = startPos;
-        _spawnManager = GameObject.Find("SpawnManager").GetComponent<EnemySpawner>();
+        _spawnManager = GameObject.Find("SpawnManager").GetComponent<SpawnManager>();
 
         if (_spawnManager == null)
         {
@@ -55,7 +61,7 @@ public class Player : MonoBehaviour
         float verticalInput = Input.GetAxis("Vertical");
         Vector3 direction = new Vector3(horizontalInput, verticalInput, 0);
 
-        transform.Translate(direction * _speed * Time.deltaTime);
+        transform.Translate(direction * (_speed * speedMultiplier) * Time.deltaTime);
 
         if (transform.position.x < -12)
         {
@@ -83,32 +89,53 @@ public class Player : MonoBehaviour
 
     public void Damage()
     {
-        _lives--;
-        Debug.Log("HIT!");
-        if (_lives < 1)
+        if (shieldEnabled) {
+            shieldEnabled = false;
+            _shieldPrefab.SetActive(false);
+        } 
+        else
         {
-            _spawnManager.OnPlayerDeath();
-            Destroy(this.gameObject);
+            _lives--;
+            if (_lives < 1)
+            {
+                _spawnManager.OnPlayerDeath();
+                Destroy(this.gameObject);
+            }
         }
+
+        Debug.Log("HIT!");
     }
 
     public void EnableTripleShot()
     {
-        float timer = 5f;
         tripleShotEnabled = true;
-        while (timer > 0)
-        {
-            Debug.Log("timer");
-            timer -= Time.deltaTime;
-        }
-        //tripleShotEnabled = false;
+        StartCoroutine(TripleShotCooldown());
+     
     }
-
-    /* 
     IEnumerator TripleShotCooldown()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(tripleShotDuration);
         tripleShotEnabled = false;
     }
-    */
+
+    public void EnableSpeedBoost()
+    {
+        speedMultiplier = 2;
+        StartCoroutine(SpeedBoostCooldown());
+    }
+    
+    IEnumerator SpeedBoostCooldown()
+    {
+        yield return new WaitForSeconds(speedBoostDuration);
+        speedMultiplier = 1;
+    }
+
+    public void EnableShield()
+    {
+        if (!shieldEnabled)
+        {
+            shieldEnabled = true;
+            _shieldPrefab.SetActive(true);
+        }
+    }
 }
